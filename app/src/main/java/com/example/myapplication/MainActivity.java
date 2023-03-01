@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout toastContainer = (LinearLayout) toast.getView();
         ImageView cat = new ImageView(this);
         cat.setImageResource(R.drawable.cat);
+        toastContainer.addView(cat, 1);
         toast.show();
         super.onResume();
     }
